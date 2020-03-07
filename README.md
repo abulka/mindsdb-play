@@ -26,3 +26,13 @@ Set-ExecutionPolicy RemoteSigned
 using powershell to avoid warnings re running activate.ps1
 https://github.com/Microsoft/vscode-python/issues/2559
 
+Installing on Mac
+=================
+
+Worked ok for Python 3.7 but with Python 3.8
+ERROR: No matching distribution found for sentencepiece==0.1.85 
+see https://github.com/google/sentencepiece/issues/411 
+This issue persists on MacOS because MacOS did not have a 3.8 wheel released, and therefore v0.1.83 is still attempted with a pip install. 
+
+Solution: Use Python 3.7
+

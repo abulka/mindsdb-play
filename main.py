@@ -6,7 +6,8 @@ print("learning...")
 Predictor(name='home_rentals_price').learn(
     to_predict='rental_price', # the column we want to learn to predict given all the data in the file
     from_data="https://s3.eu-west-2.amazonaws.com/mindsdb-example-data/home_rentals.csv", # the path to the file where we can learn from, (note: can be url)
-    use_gpu=False  # 25 seconds using powershell: Measure-Command {python .\main.py}
+    use_gpu=False  # 25 seconds using powershell: Measure-Command {python .\main.py} 
+                   # 29 seconds on iMac  
     # use_gpu=True  # 25 seconds also (much less CPU used though)
 )
 
