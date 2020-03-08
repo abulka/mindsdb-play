@@ -17,7 +17,7 @@ Predictor(name='spam_test', log_level=ANDY_LOGLEVEL).learn(
     to_predict='answer', # the column we want to learn to predict given all the data in the file
     from_data="spam_small.csv", # the path to the file where we can learn from, (note: can be url)
     use_gpu=False,
-    stop_training_in_x_seconds=60
+    stop_training_in_x_seconds=10
 )
 
 # use the model to make predictions
